@@ -1,0 +1,79 @@
+{
+  "name": "socketstream",
+  "description": "A fast, modular Node.js framework dedicated to building realtime apps w/Server-Side template rendering.",
+  "version": "1.0.0",
+  "homepage": "http://www.socketstream.org",
+  "author": {
+    "name": "Owen Barnes",
+    "email": "owen@socketstream.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/socketstream/socketstream"
+  },
+  "contributors": [
+    {
+      "name": "Paul Jensen"
+    },
+    {
+      "name": "Alan Milford"
+    },
+    {
+      "name": "Addy Osmani"
+    },
+    {
+      "name": "nponeccop"
+    },
+    {
+      "name": "Gilbert B Garza"
+    },
+    {
+      "name": "Craig Jordan Muir"
+    },
+    {
+      "name": "David Rosen"
+    },
+    {
+      "name": "Michael Lawson"
+    }
+  ],
+  "dependencies": {
+    "apitree": "1.1.0",
+    "chokidar": "0.6.3",
+    "clean-css": "4.2.1",
+    "colors": "^1.4.0",
+    "commander": "0.6.1",
+    "connect": "^3.7.0",
+    "connect-redis": "1.4.4",
+    "engine.io": "1.8.5",
+    "eventemitter2": "^6.4.4",
+    "express-session": "^1.17.123",
+    "redis": "0.8.1",
+    "semver": "^5.5.0",
+    "serve-static": "^1.13.2",
+    "uglify-js": "^2.8.29"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "directories": {
+    "lib": "./lib",
+    "doc": "./doc"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "bin": {
+    "socketstream": "./bin/socketstream"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/socketstream/socketstream/issues"
+  },
+  "_id": "socketstream@0.3.6",
+  "dist": {
+    "shasum": "f6e1c09a97273484945aead5249f3e1586963680"
+  }
+}
