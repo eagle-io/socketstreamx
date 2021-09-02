@@ -47,7 +47,7 @@
     "connect-redis": "1.4.4",
     "engine.io": "1.8.5",
     "eventemitter2": "^6.4.4",
-    "express-session": "^1.17.123",
+    "express-session": "https://github.com/eagle-io/express-session.git",
     "redis": "0.8.1",
     "semver": "^5.5.0",
     "serve-static": "^1.13.2",
