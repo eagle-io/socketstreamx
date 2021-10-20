@@ -1,9 +1,8 @@
 
-# SocketStream [![Build Status](https://api.travis-ci.org/socketstream/socketstream.png?branch=master)](https://travis-ci.org/socketstream/socketstream) [![Dependency Status](https://david-dm.org/socketstream/socketstream.png)](https://david-dm.org/socketstream/socketstream#info=dependencies) [![devDependency Status](https://david-dm.org/socketstream/socketstream/dev-status.png)](https://david-dm.org/socketstream/socketstream#info=devDependencies)
+# SocketStream 
 
-## NOTES
-
-Legacy version. Forked and adapted from the origin socketstream project.
+Legacy version. 
+Forked and adapted from the origin socketstream project.
 
 
 
