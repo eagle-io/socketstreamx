@@ -1,7 +1,7 @@
 {
   "name": "socketstream",
   "description": "A fast, modular Node.js framework dedicated to building realtime apps w/Server-Side template rendering.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "http://www.socketstream.org",
   "author": {
     "name": "Owen Barnes",
@@ -51,7 +51,7 @@
     "redis": "0.8.1",
     "semver": "^5.5.0",
     "serve-static": "^1.13.2",
-    "uglify-js": "^2.8.29"
+    "uglify-js": "^3.15.4"
   },
   "devDependencies": {},
   "scripts": {
