@@ -2,7 +2,7 @@
 // TODO: Find a way to give access to Websocket Message Responders here
 
 var repl = require('repl')
-  , ss = require('socketstream');
+  , ss = require('socketstreamx');
 
 ss.start();
 

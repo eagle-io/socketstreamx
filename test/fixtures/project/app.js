@@ -1,7 +1,7 @@
 // My SocketStream app
 
 var http = require('http')
-  , ss = require('socketstream');
+  , ss = require('socketstreamx');
 
 ss.client.define('main', {
   view: 'app.jade',
