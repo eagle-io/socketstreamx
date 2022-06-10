@@ -1,15 +1,15 @@
 {
-  "name": "socketstream",
+  "name": "socketstreamx",
   "description": "A fast, modular Node.js framework dedicated to building realtime apps w/Server-Side template rendering.",
-  "version": "1.0.4",
-  "homepage": "http://www.socketstream.org",
+  "version": "1.0.5",
   "author": {
     "name": "Owen Barnes",
     "email": "owen@socketstream.org"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/socketstream/socketstream"
+    "url": "https://github.com/eagle-io/socketstream"
   },
   "contributors": [
     {
@@ -68,12 +68,5 @@
   "bin": {
     "socketstream": "./bin/socketstream"
   },
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/socketstream/socketstream/issues"
-  },
-  "_id": "socketstream@0.3.6",
-  "dist": {
-    "shasum": "f6e1c09a97273484945aead5249f3e1586963680"
-  }
+  "readmeFilename": "README.md"
 }
