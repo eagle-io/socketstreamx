@@ -1,5 +1,5 @@
 
-# SocketStream 
+# SocketStreamX 
 
 Legacy version. 
 Forked and adapted from the origin socketstream project.
