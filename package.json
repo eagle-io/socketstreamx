@@ -1,7 +1,7 @@
 {
   "name": "socketstreamx",
   "description": "A fast, modular Node.js framework dedicated to building realtime apps w/Server-Side template rendering.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": {
     "name": "Owen Barnes",
     "email": "owen@socketstream.org"
@@ -45,7 +45,7 @@
     "commander": "0.6.1",
     "connect": "^3.7.0",
     "connect-redis": "1.4.4",
-    "engine.io": "1.8.5",
+    "engine.io": "3.6.2",
     "eventemitter2": "^6.4.4",
     "express-session": "https://github.com/eagle-io/express-session.git",
     "redis": "0.8.1",
