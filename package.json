@@ -45,7 +45,7 @@
     "commander": "0.6.1",
     "connect": "^3.7.0",
     "connect-redis": "1.4.4",
-    "engine.io": "3.6.2",
+    "engine.io": "6.6.11",
     "eventemitter2": "^6.4.4",
     "express-session": "https://github.com/eagle-io/express-session.git",
     "redis": "0.8.1",
@@ -54,12 +54,6 @@
     "ssri": "^10.0.6",
     "uglify-js": "3.15.4"
   },
-  "overrides": {
-    "engine.io@3.6.2": {
-      "debug": "4.3.6"
-    }
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "grunt test"
   },
@@ -74,5 +68,8 @@
   "bin": {
     "socketstream": "./bin/socketstream"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "engine.io-client": "6.6.7"
+  }
 }
