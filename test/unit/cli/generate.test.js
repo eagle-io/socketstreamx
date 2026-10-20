@@ -6,13 +6,16 @@ var exec                                  = require('child_process').exec,
     ac                                    = require('../../helpers/assertionCounter'),
     fs                                    = require('fs'),
     path                                  = require('path'),
-    async                                 = require('async'),
     generate                              = require(path.join(process.env.PWD, 'lib/cli/generate')),
     demoAppEndDir                         = 'test/results/waaa',
     demoAppPath                           = path.join(process.env.PWD, demoAppEndDir),
     program                               = {},
     logs                                  = [],
     newProjectDirectoriesThatShouldExist  = [];
+
+function rejectExisting (paths, done) {
+  done(paths.filter(function (item) { return !fs.existsSync(item); }));
+}
 
 
 
@@ -124,7 +127,7 @@ describe('generate', function () {
         generate.generate(program);
 
         /* Using 'async' library to check if all the required project's folders exist */
-        async.reject(newProjectDirectoriesThatShouldExist, fs.exists, function (result) {
+        rejectExisting(newProjectDirectoriesThatShouldExist, function (result) {
             result.length.should.equal(0).andCheck();
             ac.check(done);
         });
@@ -175,7 +178,7 @@ describe('generate', function () {
         generate.generate(program);
 
         /* Using 'async' library to check if all the required project's coffeescript files exist */
-        async.reject(newProjectFilesThatShouldExistWhenUsingCoffeeScript, fs.exists, function (result) {
+        rejectExisting(newProjectFilesThatShouldExistWhenUsingCoffeeScript, function (result) {
             result.length.should.equal(0).andCheck();
             ac.check(done);
         });
@@ -218,7 +221,7 @@ describe('generate', function () {
         generate.generate(program);
 
         /* Using 'async' library to check if all the required project's coffeescript files exist */
-        async.reject(newProjectFilesThatShouldExistWhenUsingJade, fs.exists, function (result) {
+        rejectExisting(newProjectFilesThatShouldExistWhenUsingJade, function (result) {
             result.length.should.equal(0).andCheck();
             ac.check(done);
         });        
@@ -244,7 +247,7 @@ describe('generate', function () {
         generate.generate(program);
 
         /* Using 'async' library to check if all the required project's coffeescript files exist */
-        async.reject(newProjectFilesThatBelongToDemo, fs.exists, function (result) {
+        rejectExisting(newProjectFilesThatBelongToDemo, function (result) {
             result.length.should.equal(newProjectFilesThatBelongToDemo.length).andCheck();
             ac.check(done);
         });
